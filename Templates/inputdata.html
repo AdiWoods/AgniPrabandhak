@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/inputdata.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        <!-- inputing the location -->
+        <input type="text" placeholder="Location" name="location">
+
+        <!-- inputing the file -->
+        <input type="file" placeholder="Upload the image" name="file">
+
+        <!-- inputing the contact number -->
+        <input type="text" name="phoneno" placeholder="Enter the contact number">
+
+        <button type="submit">report</button>
+
+    
+
+
+
+
+    </form>
+    
+</body>
+</html>
